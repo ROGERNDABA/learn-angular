@@ -1,7 +1,16 @@
-<div class="sidemenu-container" [ngStyle]="{ width: activeMenu === 'activeMenu' ? '100%' : '0' }">
-  <div class="sidemenu activeMenu {{ activeMenu }}">
-    <a class="closebtn" (click)="OpenCloseMenu('Close')">&times;</a>
-    <div class="menu-card">sdsd</div>
+<div
+  class="sidemenu-container"
+  [ngStyle]="{ width: activeMenu === 'activeMenu' ? '100%' : '0' }"
+  (click)="OpenCloseMenu('Close')"
+>
+  <div class="sidemenu {{ activeMenu }}">
+    <a class="closebtn t-c">&times;</a>
+    <div class="menu-card">
+      <div class="profile-img-card">
+        <div class="profile-img"></div>
+      </div>
+      <div class="name-card t-c b">Roger Ndaba</div>
+    </div>
   </div>
 </div>
 
