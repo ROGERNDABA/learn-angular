@@ -8,11 +8,12 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { TestComponent } from "./components/test/test.component";
+// import { TestComponent } from "./components/test/test.component";
 import { DataService } from "./services/data.service";
+import { HomeComponent } from "./components/home/home.component";
 
 @NgModule({
-  declarations: [AppComponent, TestComponent],
+  declarations: [AppComponent, HomeComponent /*, TestComponent*/],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),

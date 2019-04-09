@@ -1,13 +1,13 @@
-<div id="mySidenav" class="sidenav {{ activeMenu }}">
-  <a class="closebtn" (click)="OpenCloseMenu('Close')">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+<div class="sidemenu-container" [ngStyle]="{ width: activeMenu === 'activeMenu' ? '100%' : '0' }">
+  <div class="sidemenu activeMenu {{ activeMenu }}">
+    <a class="closebtn" (click)="OpenCloseMenu('Close')">&times;</a>
+    <div class="menu-card">sdsd</div>
+  </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" (click)="OpenCloseMenu('Open')"
-  >&#9776;</span
->
-
-<router-outlet></router-outlet>
+<div style="font-size:40px;cursor:pointer" (click)="OpenCloseMenu('Open')">
+  &#9776;
+</div>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>

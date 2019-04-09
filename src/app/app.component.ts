@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { Observable } from "rxjs";
+import * as $ from "jquery";
 
 @Component({
   selector: "app-root",
@@ -18,9 +19,9 @@ export class AppComponent {
     // });
   }
 
-  OpenCloseMenu(menuState: string) {
-    console.log(menuState);
+  ngOnInit() {}
 
+  OpenCloseMenu(menuState: string) {
     if (menuState == "Open") this.activeMenu = "activeMenu";
     else this.activeMenu = "";
   }

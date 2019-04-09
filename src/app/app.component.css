@@ -1,43 +1,53 @@
-.sidenav {
+.sidemenu {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  text-align: center;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.sidemenu ::-webkit-scrollbar {
+  width: 2px;
+}
+
+.menu-card {
+  background: white;
+  height: 300px;
 }
 
 .activeMenu {
   width: 250px;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 60px;
-  text-decoration: none;
-  outline: none;
-  font-size: 20px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.sidemenu-container {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.507);
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidemenu a:hover {
+  color: #ff00ff;
 }
 
-.sidenav .closebtn {
+.sidemenu .closebtn {
   position: absolute;
   top: 0;
   right: 10px;
+  color: rgb(200, 200, 200);
   font-size: 25px;
 }
 
 @media screen and (max-width: 450px) {
-  .sidenav a {
+  .sidemenu a {
     font-size: 18px;
   }
 }
