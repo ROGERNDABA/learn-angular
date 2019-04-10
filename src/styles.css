@@ -4,7 +4,7 @@ body {
 }
 
 * {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -25,13 +25,21 @@ body {
 }
 
 .f-s {
-  font-size: 18px;
+  font-size: 15px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   * {
-    font-size: 16px;
+    font-size: 15px;
     transition: 0.1s;
   }
 }

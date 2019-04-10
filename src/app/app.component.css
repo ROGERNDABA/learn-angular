@@ -38,12 +38,39 @@
   width: 250px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 14px 16px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-btn {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.menu-btn:hover {
+  color: #d35ed3;
+}
 .sidemenu-container {
   position: absolute;
   width: 0%;
   height: 100%;
   transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.507);
+  top: 0;
 }
 
 .sidemenu a:hover {

@@ -11,9 +11,10 @@ import { AppComponent } from "./app.component";
 // import { TestComponent } from "./components/test/test.component";
 import { DataService } from "./services/data.service";
 import { HomeComponent } from "./components/home/home.component";
+import { ArticlesComponent } from "./components/articles/articles.component";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent /*, TestComponent*/],
+  declarations: [AppComponent, HomeComponent, ArticlesComponent /*, TestComponent*/],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
