@@ -18,7 +18,8 @@ export class SubscribeComponent implements OnInit {
     });
   }
 
-  subscribeSuccessAlert() {
+  subscribeSuccessAlert(event: Event) {
+    event.preventDefault();
     this.gs.setAlertMsg({ msg: "sdsdsdsdsdddddddddd", timeout: 3000, type: "success" });
   }
 }
