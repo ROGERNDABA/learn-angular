@@ -1,24 +1,15 @@
-import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { Observable, Subject } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 // import { HttpModule } from '@angular/http';
 // import { importExpr } from '@angular/compiler/src/output/output_ast';
 // import { map } from 'rxjs/operators';
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class DataService {
-
   constructor(private http: HttpClient) {
-    console.log('data service initialized...');
+    console.log("data service initialized...");
   }
-
-  getData() {
-    this.http.get('http://localhost:8080').subscribe(res => {
-      console.log(res);
-    });
-  }
-
 }

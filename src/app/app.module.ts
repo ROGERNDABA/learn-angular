@@ -8,13 +8,15 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-// import { TestComponent } from "./components/test/test.component";
+
 import { DataService } from "./services/data.service";
+import { GeneralService } from "./services/general.service";
 import { HomeComponent } from "./components/home/home.component";
 import { ArticlesComponent } from "./components/articles/articles.component";
+import { SubscribeComponent } from "./components/subscribe/subscribe.component";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ArticlesComponent /*, TestComponent*/],
+  declarations: [AppComponent, HomeComponent, ArticlesComponent, SubscribeComponent /*, TestComponent*/],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -22,7 +24,7 @@ import { ArticlesComponent } from "./components/articles/articles.component";
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [DataService],
+  providers: [DataService, GeneralService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

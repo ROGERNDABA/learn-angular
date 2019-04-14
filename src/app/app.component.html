@@ -1,36 +1,27 @@
-<nav>
-  <!-- <div class="menu-btn t-c" (click)="OpenCloseMenu('Open')">
-    &#9776;
-  </div>
-  <div class="nav-content t-c">
-    <div class="t-c">sdsdsd</div>
-  </div> -->
-  <ul>
-    <li><a class="menu-btn t-c" (click)="OpenCloseMenu('Open')">&#9776;</a></li>
-    <li style="float:right">
-      <div><button>xcxc</button></div>
-    </li>
-  </ul>
+<nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand secondary-color-hov" style="cursor: pointer;" (click)="OpenCloseMenu('Open')">&#9776;</a>
+  <a [routerLink]="['/subscribe']" class="my-lg-0">
+    <button class="btn p-1 secondary-color primary-border" type="submit">Subscribe</button>
+  </a>
 </nav>
-
+<div *ngIf="successMsg" class="alert alert-success text-center p-1">{{ successMsg }}</div>
+<div *ngIf="failureMsg" class="alert alert-danger text-center p-1">{{ failureMsg }}</div>
+<div class="sidemenu secondary-color {{ activeMenu }}">
+  <a class="closebtn link" (click)="OpenCloseMenu('Close')">&times;</a>
+  <div class="menu-card pt-5">
+    <div class="profile-img-card">
+      <div class="profile-img"></div>
+    </div>
+    <p class="font-weight-bold m-2">Roger Ndaba</p>
+    <p><em>Software Engineer</em></p>
+  </div>
+</div>
 <div
   class="sidemenu-container"
   [ngStyle]="{ width: activeMenu === 'activeMenu' ? '100%' : '0' }"
   (click)="OpenCloseMenu('Close')"
->
-  <div class="sidemenu {{ activeMenu }}">
-    <a class="closebtn t-c">&times;</a>
-    <div class="menu-card">
-      <div class="profile-img-card">
-        <div class="profile-img"></div>
-      </div>
-      <div class="name-card t-c b">Roger Ndaba</div>
-    </div>
-  </div>
-</div>
+></div>
 
-<!-- <a routerLink="/">ssd</a><br />
-<a routerLink="/articles">ssd</a> -->
-<div class="main">
+<div class="container">
   <router-outlet> </router-outlet>
 </div>

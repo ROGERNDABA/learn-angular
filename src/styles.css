@@ -1,61 +1,36 @@
-body {
-  padding: 0;
-  margin: 0;
+.primary-color {
+  color: #d35ed3 !important;
 }
 
-* {
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+.secondary-color {
+  color: #dfdfdf !important;
 }
 
-.p-c {
-  color: #d35ed3;
+.primary-background {
+  background-color: #d35ed3 !important;
 }
 
-.s-c {
-  color: #ffffff;
+.secondary-background {
+  background-color: #dfdfdf !important;
 }
 
-.t-c {
-  color: rgb(200, 200, 200);
+.secondary-color-hov {
+  color: #dfdfdf !important;
 }
 
-.b {
-  font-weight: bold;
+.secondary-color-hov:hover {
+  color: #d35ed3 !important;
 }
 
-.f-s {
-  font-size: 15px;
+.link:hover {
+  color: #d35ed3 !important;
 }
 
-.float-left {
-  float: left;
+.primary-border {
+  border: 1px solid #dfdfdf !important;
 }
 
-.float-right {
-  float: right;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  * {
-    font-size: 15px;
-    transition: 0.1s;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+.primary-border:hover {
+  color: #d35ed3 !important;
+  border: 1px solid #d35ed3 !important;
 }
